@@ -6,10 +6,10 @@ In this case study, I will perform many real-world tasks of a junior data analys
 Data Source: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html)   
   
 SQL Queries:  
-[01. Data Combining]()  
-[02. Data Exploration]()  
-[03. Data Cleaning]()  
-[04. Data Analysis]()  
+[01. Data Combining](https://github.com/avnig21/Google-Data-Analytics-Capstone-Project/blob/main/01.%20Data%20Combining.sql)  
+[02. Data Exploration](https://github.com/avnig21/Google-Data-Analytics-Capstone-Project/blob/main/02.%20Data%20Exploration.sql)  
+[03. Data Cleaning](https://github.com/avnig21/Google-Data-Analytics-Capstone-Project/blob/main/03.%20Data%20Cleaning.sql)  
+[04. Data Analysis](https://github.com/avnig21/Google-Data-Analytics-Capstone-Project/blob/main/04.%20Data%20Analysis.sql)  
   
 Data Visualizations: [Tableau]()  
 ## Background
@@ -36,18 +36,8 @@ Three questions will guide the future marketing program:
 
 Moreno has assigned me the first question to answer: How do annual members and casual riders use Cyclistic bikes differently?
 ## Prepare
-### Data Source
-I will use Cyclistic’s historical trip data to analyze and identify trends from Jan 2022 to Dec 2022 which can be downloaded from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html). The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement).  
-  
-This is public data that can be used to explore how different customer types are using Cyclistic bikes. But note that data-privacy issues prohibit from using riders’ personally identifiable information. This means that we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
-### Data Organization
-There are 12 files with naming convention of YYYYMM-divvy-tripdata and each file includes information for one month, such as the ride id, bike type, start time, end time, start station, end station, start location, end location, and whether the rider is a member or not. The corresponding column names are ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.
-
 ## Process
 BigQuery is used to combine the various datasets into one dataset and clean it.    
-Reason:  
-A worksheet can only have 1,048,576 rows in Microsoft Excel because of its inability to manage large amounts of data. Because the Cyclistic dataset has more than 5.6 million rows, it is essential to use a platform like BigQuery that supports huge volumes of data.
-### Combining the Data
 SQL Query: [Data Combining](https://github.com/avnig21/Google-Data-Analytics-Capstone-Project/blob/main/01.%20Data%20Combining.sql)  
 12 csv files are uploaded as tables in the dataset '2022_tripdata'. Another table named "combined_data" is created, containing 5,667,717 rows of data for the entire year. 
 ### Data Exploration
@@ -63,43 +53,31 @@ SQL Query: [Data Cleaning](https://github.com/avnig21/Google-Data-Analytics-Caps
   
 ## Analyze and Share
 SQL Query: [Data Analysis](https://github.com/avnig21/Google-Data-Analytics-Capstone-Project/blob/main/04.%20Data%20Analysis.sql)  
-Data Visualization: [Tableau]()  
+Data Visualization: [Tableau](https://public.tableau.com/authoring/AvniGour_GoogleCapstone)  
 The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau.  
 The analysis question is: How do annual members and casual riders use Cyclistic bikes differently?  
 
 First of all, member and casual riders are compared by the type of bikes they are using.  
 
-![image]()
-  
 The members make 59.7% of the total while remaining 40.3% constitutes casual riders. Each bike type chart shows percentage from the total. Most used bike is classic bike followed by the electric bike. Docked bikes are used the least by only casual riders. 
   
 Next the number of trips distributed by the months, days of the week and hours of the day are examined.  
-  
-![image]()
-![image]()
-  
+    
 __Months:__ When it comes to monthly trips, both casual and members exhibit comparable behavior, with more trips in the spring and summer and fewer in the winter. The gap between casuals and members is closest in the month of july in summmer.   
 __Days of Week:__ When the days of the week are compared, it is discovered that casual riders make more journeys on the weekends while members show a decline over the weekend in contrast to the other days of the week.  
 __Hours of the Day:__ The members shows 2 peaks throughout the day in terms of number of trips. One is early in the morning at around 6 am to 8 am and other is in the evening at around 4 pm to 8 pm while number of trips for casual riders increase consistently over the day till evening and then decrease afterwards.  
   
 We can infer from the previous observations that member may be using bikes for commuting to and from the work in the week days while casual riders are using bikes throughout the day, more frequently over the weekends for leisure purposes. Both are most active in summer and spring.  
   
-Ride duration of the trips are compared to find the differences in the behavior of casual and member riders.  
-  
-![image]()  
-![image]()
-  
+Ride duration of the trips are compared to find the differences in the behavior of casual and member riders.   
+
 Take note that casual riders tend to cycle longer than members do on average. The length of the average journey for members doesn't change throughout the year, week, or day. However, there are variations in how long casual riders cycle. In the spring and summer, on weekends, and from 10 am to 2 pm during the day, they travel greater distances. Between five and eight in the morning, they have brief trips.
   
 These findings lead to the conclusion that casual commuters travel longer (approximately 2x more) but less frequently than members. They make longer journeys on weekends and during the day outside of commuting hours and in spring and summer season, so they might be doing so for recreation purposes.    
   
 To further understand the differences in casual and member riders, locations of starting and ending stations can be analysed. Stations with the most trips are considered using filters to draw out the following conclusions.  
-  
-![image]()  
-  
+    
 Casual riders have frequently started their trips from the stations in vicinity of museums, parks, beach, harbor points and aquarium while members have begun their journeys from stations close to universities, residential areas, restaurants, hospitals, grocery stores, theatre, schools, banks, factories, train stations, parks and plazas.  
-  
-![image]()
   
 Similar trend can be observed in ending station locations. Casual riders end their journay near parks, museums and other recreational sites whereas members end their trips close to universities, residential and commmercial areas. So this proves that casual riders use bikes for leisure activities while members extensively rely on them for daily commute.  
   
