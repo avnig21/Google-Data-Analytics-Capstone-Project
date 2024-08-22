@@ -2,8 +2,7 @@
 Course: [Google Data Analytics Capstone: Complete a Case Study](https://www.coursera.org/learn/google-data-analytics-capstone)
 ## Introduction
 In this case study, I will perform many real-world tasks of a junior data analyst at a fictional company, Cyclistic. In order to answer the key business questions, I will follow the steps of the data analysis process: Ask, Prepare, Process, Analyze, Share, and Act.
-### Quick links:
-Data Source: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html)   
+### Quick links: 
   
 SQL Queries:  
 [01. Data Combining](https://github.com/avnig21/Google-Data-Analytics-Capstone-Project/blob/main/01.%20Data%20Combining.sql)  
@@ -11,7 +10,6 @@ SQL Queries:
 [03. Data Cleaning](https://github.com/avnig21/Google-Data-Analytics-Capstone-Project/blob/main/03.%20Data%20Cleaning.sql)  
 [04. Data Analysis](https://github.com/avnig21/Google-Data-Analytics-Capstone-Project/blob/main/04.%20Data%20Analysis.sql)  
   
-Data Visualizations: [Tableau]()  
 ## Background
 ### Cyclistic
 A bike-share program that features more than 5,800 bicycles and 600 docking stations. Cyclistic sets itself apart by also offering reclining bikes, hand tricycles, and cargo bikes, making bike-share more inclusive to people with disabilities and riders who can’t use a standard two-wheeled bike. The majority of riders opt for traditional bikes; about 8% of riders use the assistive options. Cyclistic users are more likely to ride for leisure, but about 30% use them to commute to work each day.   
@@ -62,7 +60,9 @@ First of all, member and casual riders are compared by the type of bikes they ar
 The members make 59.7% of the total while remaining 40.3% constitutes casual riders. Each bike type chart shows percentage from the total. Most used bike is classic bike followed by the electric bike. Docked bikes are used the least by only casual riders. 
   
 Next the number of trips distributed by the months, days of the week and hours of the day are examined.  
-    
+  
+![image](https://drive.google.com/drive/u/0/folders/1pNRRvpjB8EuzBiVLrq5dgQ87ocktbaDY)
+![image]()    
 __Months:__ When it comes to monthly trips, both casual and members exhibit comparable behavior, with more trips in the spring and summer and fewer in the winter. The gap between casuals and members is closest in the month of july in summmer.   
 __Days of Week:__ When the days of the week are compared, it is discovered that casual riders make more journeys on the weekends while members show a decline over the weekend in contrast to the other days of the week.  
 __Hours of the Day:__ The members shows 2 peaks throughout the day in terms of number of trips. One is early in the morning at around 6 am to 8 am and other is in the evening at around 4 pm to 8 pm while number of trips for casual riders increase consistently over the day till evening and then decrease afterwards.  
