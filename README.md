@@ -1,7 +1,7 @@
 # Google-Data-Analytics-Capstone-Project :  Cyclistic Case Study
 Course: [Google Data Analytics Capstone: Complete a Case Study](https://www.coursera.org/learn/google-data-analytics-capstone)
 ## Introduction
-In this case study, I will perform many real-world tasks of a junior data analyst at a fictional company, Cyclistic. In order to answer the key business questions, I will follow the steps of the data analysis process: [Ask], [Prepare], [Process], [Analyze], [Share](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#analyze-and-share), and [Act].
+In this case study, I will perform many real-world tasks of a junior data analyst at a fictional company, Cyclistic. In order to answer the key business questions, I will follow the steps of the data analysis process: Ask, Prepare, Process, Analyze, Share, and Act.
 ### Quick links:
 Data Source: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html)   
   
@@ -73,7 +73,7 @@ Observations:
 4. All __ride_id__ values have length of 16 so no need to clean it.
 5. There are 3 unique types of bikes(__rideable_type__) in our data.
 
-   ![image](https://user-images.githubusercontent.com/125132307/226203372-10c60802-0880-4b17-9ac0-2177ab862974.png)
+   ![image]()
 
 6. The __started_at__ and __ended_at__ shows start and end time of the trip in YYYY-MM-DD hh:mm:ss UTC format. New column ride_length can be created to find the total trip duration. There are 5360 trips which has duration longer than a day and 122283 trips having less than a minute duration or having end time earlier than start time so need to remove them. Other columns day_of_week and month can also be helpful in analysis of trips at different times in a year.
 7. Total of 833064 rows have both __start_station_name__ and __start_station_id__ missing which needs to be removed.  
