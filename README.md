@@ -56,13 +56,13 @@ The data is stored appropriately and is now prepared for analysis. I queried mul
 The analysis question is: How do annual members and casual riders use Cyclistic bikes differently?  
 
 First of all, member and casual riders are compared by the type of bikes they are using.  
-
+![1](https://github.com/user-attachments/assets/91ba093d-1aa0-4c89-9429-c528b205570e)
 The members make 59.7% of the total while remaining 40.3% constitutes casual riders. Each bike type chart shows percentage from the total. Most used bike is classic bike followed by the electric bike. Docked bikes are used the least by only casual riders. 
   
 Next the number of trips distributed by the months, days of the week and hours of the day are examined.  
-  
-![image](https://drive.google.com/drive/u/0/folders/1pNRRvpjB8EuzBiVLrq5dgQ87ocktbaDY)
-![image]()    
+
+![2](https://github.com/user-attachments/assets/80a18e84-3512-4aa6-8f53-cd36dd362cee)
+![3](https://github.com/user-attachments/assets/04021fe7-92af-4283-ba2b-9f53f872990d)     
 __Months:__ When it comes to monthly trips, both casual and members exhibit comparable behavior, with more trips in the spring and summer and fewer in the winter. The gap between casuals and members is closest in the month of july in summmer.   
 __Days of Week:__ When the days of the week are compared, it is discovered that casual riders make more journeys on the weekends while members show a decline over the weekend in contrast to the other days of the week.  
 __Hours of the Day:__ The members shows 2 peaks throughout the day in terms of number of trips. One is early in the morning at around 6 am to 8 am and other is in the evening at around 4 pm to 8 pm while number of trips for casual riders increase consistently over the day till evening and then decrease afterwards.  
@@ -70,6 +70,9 @@ __Hours of the Day:__ The members shows 2 peaks throughout the day in terms of n
 We can infer from the previous observations that member may be using bikes for commuting to and from the work in the week days while casual riders are using bikes throughout the day, more frequently over the weekends for leisure purposes. Both are most active in summer and spring.  
   
 Ride duration of the trips are compared to find the differences in the behavior of casual and member riders.   
+![4](https://github.com/user-attachments/assets/e0d6245e-d09f-4c7e-b9cc-055cde017172)
+![5](https://github.com/user-attachments/assets/1383cadb-9f88-4a0f-af1c-a27fd49c191f)
+
 
 Take note that casual riders tend to cycle longer than members do on average. The length of the average journey for members doesn't change throughout the year, week, or day. However, there are variations in how long casual riders cycle. In the spring and summer, on weekends, and from 10 am to 2 pm during the day, they travel greater distances. Between five and eight in the morning, they have brief trips.
   
